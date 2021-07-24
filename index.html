@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <video src="./video/default.mp4" autoplay loop>
+
+    </video>
+    <div class="card">
+      <div class="titulo">
+        <h1>WEATHER APP</h1>
+      </div>
+      <div class="fecha">
+        <p class="fecha_hoy">Fecha:</p>
+      </div>
+
+      <div class="busqueda">
+        <input class="city_value" type="text" onkeyup="javascript:this.value=this.value.toUpperCase()" placeholder="WRITE YOUR CITY">
+        <button type="button" name="button" class="button_weather">FIND</button>
+      </div>
+    </div>
+    <div class="card_2">
+      <div class="weather_card">
+        <div class="ubicacion">
+          <p class="city_card">CIUDAD:</p>
+          <p class="pais">PAÍS:</p>
+        </div>
+      </div>
+      <div class="clima">
+        <p class="temperatura">TEMPERATURA:</p>
+        <p class="temp_min">T. MÍNIMA:</p>
+        <p class="temp_max">T. MÁXIMA:</p>
+      </div>
+    </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  </body>
+</html>
