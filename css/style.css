@@ -39,7 +39,7 @@ video{
     padding: 0;
     width: 35vw;
     height: 55vh;
-    background-color: rgba(226, 222, 214, 0.67);
+    background-color: rgba(226, 222, 214, 0.87);
     color: #ffffff;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem
@@ -143,6 +143,7 @@ input{
 
 .ubicacion{
   font-size: 1.5rem;
+  font-weight: bold;
   display: flex;
   justify-content: space-around;
   width: 100%;

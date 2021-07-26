@@ -22,9 +22,8 @@ jQuery(document).ready(function($) {
   let img_code;
 
   boton_clima.addEventListener('click', function() {
-    $('.button_weather').html('FIND');
+    $('.button_weather').html('FIND')
     img_code;
-
     fetch(`${url_woeid}${location.value}`)
       .then(res => {
         return res.json();
@@ -73,9 +72,12 @@ jQuery(document).ready(function($) {
   function mostrarTarjetas(){
     $('.card_2').toggle('slow');
     $('.fecha').toggle('fast');
-    $('.button_weather').html('HIDE')
-
-  }
+    if ($('.card2').is(':none')) {
+      $('.button_weather').html('FIND');
+    }else {
+      $('.button_weather').html('HIDE');
+    }
+    }
   function cambioFondos(){
     if (weather_code == "sn") {
       $('video').attr('src', './video/nieve.mp4');
